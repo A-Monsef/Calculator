@@ -1,0 +1,84 @@
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin-top: 20px;
+    width: 350px;
+    background-color: rgb(35, 35, 35);
+    height: 500px;
+    border-radius: 20px;
+    padding: 20px 30px;
+    text-align: center;
+}
+.ecran{
+    background-color: rgb(58, 56, 56);
+    height: 120px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    color: #f0f0f0;
+}
+.numbers{
+    font-size: 15px;
+    text-align: right;
+    padding: 5px;
+}
+.clock{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    color: rgb(150, 148, 148);
+    cursor: pointer;
+}
+.clock:hover + #historique {
+    display: block
+}
+#historique{
+    border-radius: 20px;
+    background-color: rgb(35, 35, 35);
+    height: 350px;
+    width: 80%;
+    color: white;
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    padding: 10px;
+    top: 30px;
+    right: 15px;
+    box-shadow: 0 0 7.5px rgb(200 200 200 / 50%);
+    display: none;
+    overflow-y: scroll;
+}
+#historique h2{
+    text-align: start;
+}
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+.btns button{
+    height: 55px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 7.5px rgb(200 200 200 / 50%);
+    outline: none;
+}
+.btn-green{
+    background-color: rgb(159, 226, 226);
+}
+.btn-blue{
+   background-color:  rgb(76, 181, 252);
+}
+.btn-black{
+    background-color: rgb(58, 56, 56);
+    color: white;
+}
+.btn-gray{
+    background-color: #f0f0f0;
+}
